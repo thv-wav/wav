@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eslogan: Balance</title>
+    
+    <style>
+        /* Estilos CSS combinados */
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(90deg, rgba(128,128,0,1) 0%, rgba(255,182,193,1) 100%);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            background: radial-gradient(circle, rgba(128,128,0,1) 0%, rgba(255,182,193,1) 100%);
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        main {
+            max-width: 800px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .text-container {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-top: 2rem; /* Espacio adicional arriba del text-container */
+        }
+        .text {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #333;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 10px;
+        }
+        .text.colorful {
+            color: #00CED1; /* Color azul verdoso aplicado a 'Mi corazón' */
+        }
+        .wave {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 400px;
+            height: 100px;
+            overflow: hidden;
+        }
+        .wave svg {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        .wave path {
+            fill: none;
+            stroke: #ff69b4;
+            stroke-width: 3;
+            stroke-linecap: round;
+            animation: wave-animation 2s linear infinite;
+        }
+        @keyframes wave-animation {
+            0% {
+                stroke-dasharray: 400 400;
+                stroke-dashoffset: 0;
+            }
+            100% {
+                stroke-dasharray: 400 400;
+                stroke-dashoffset: -800;
+            }
+        }
+        .media-section {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+        }
+        .media-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .media-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .media-item video {
+            width: 100%; /* Ajuste al 100% del ancho */
+            height: 100%; /* Ajuste al 100% de la altura */
+            object-fit: cover;
+            display: block;
+        }
+        .media-item:hover video {
+            opacity: 0.7; /* Transparencia al hacer hover en los videos */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><a href="principal.html">HUMBE</a></h1>
+    </header>
+
+    <main>
+        <!-- Añadido del primer archivo -->
+        <div class="text-container">
+            <div class="text">Balance</div>
+            <div class="text colorful">Mi corazón</div>
+            <div class="text">Balance</div>
+            <div class="wave">
+                <svg viewBox="0 0 400 100" preserveAspectRatio="none">
+                    <path d="M-40,60 Q-20,20 40,60 T120,60 T200,60 T280,60 T360,60 T440,60"/>
+                </svg>
+            </div>
+        </div>
+
+        <section class="media-section">
+            <!-- Imagen 1 -->
+            <div class="media-item">
+                <img src="1.jpg">
+            </div>
+            <!-- Imagen 2 -->
+            <div class="media-item">
+                <img src="2.3.jpg">
+            </div>
+            <!-- Video 1 reemplazado con embed -->
+            <div class="media-item">
+                <embed src="video.mp4" width="100%" height="100%" autoplay="true"></embed>
+            </div>
+            <!-- Video 2 -->
+            <div class="media-item">
+                <video controls>
+                    <source src="video2.mp4" type="video/mp4">
+                </video>
+            </div>
+            <!-- Imagen 4 -->
+            <div class="media-item">
+                <img src="3.jpg">
+            </div>
+            <!-- Imagen 5 -->
+            <div class="media-item">
+                <img src="4.jpg">
+            </div>
+        </section>
+    </main>
+</body>
+</html>

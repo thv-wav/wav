@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+<header>
+        <h1><a href="principal.html">HUMBE</a></h1>
+    </header>
+    <style>
+        /* Estilos CSS generales */
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(90deg, rgba(128,128,0,1) 0%, rgba(255,182,193,1) 100%);
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background: radial-gradient(circle, rgba(128,128,0,1) 0%, rgba(255,182,193,1) 100%);
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow-x: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+            color: #333;
+        }
+        td:nth-child(1), /* Para la columna "Fecha" */
+        td:nth-child(3) { /* Para la columna "Estado" */
+            color: #808000;
+        }
+        td:nth-child(2), /* Para la columna "Ciudad" */
+        td:nth-child(4) { /* Para la columna "Lugar" */
+            color: #808000;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+       <main>
+        <!-- Sección de conciertos -->
+        <section class="concert-section">
+            <h2>Conciertos de Humbe</h2>
+<p> Estas son algunas fechas de los emocionantes conciertos que HUMBE tiene programados en diferentes ciudades de México. Desde Pachuca hasta Tuxtla, cada presentación promete una experiencia única en lugares icónicos como auditorios, teatros y espacios al aire libre. </p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Ciudad</th>
+                        <th>Estado</th>
+                        <th>Lugar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>15.MAR</td>
+                        <td>PACHUCA</td>
+                        <td>SOLD OUT</td>
+                        <td>AUD EXPLANADA PACHUCA</td>
+                    </tr>
+                    <tr>
+                        <td>16.MAR</td>
+                        <td>PUEBLA</td>
+                        <td>SOLD OUT</td>
+                        <td>AUD EXPLANADA PUEBLA</td>
+                    </tr>
+                    <tr>
+                        <td>23.MAR</td>
+                        <td>SAN LUIS POTOSÍ</td>
+                        <td>SOLD OUT</td>
+                        <td>EL DOMO</td>
+                    </tr>
+                    <tr>
+                        <td>30.MAR</td>
+                        <td>MONTERREY</td>
+                        <td></td>
+                        <td>FESTIVAL PAL' NORTE*</td>
+                    </tr>
+                    <tr>
+                        <td>05.ABR</td>
+                        <td>CD. JUÁREZ</td>
+                        <td>SOLD OUT</td>
+                        <td>CC ANITAS</td>
+                    </tr>
+                    <tr>
+                        <td>06.ABR</td>
+                        <td>CHIHUAHUA</td>
+                        <td>SOLD OUT</td>
+                        <td>ARENA CORNER SPORT</td>
+                    </tr>
+                    <tr>
+                        <td>19.ABR</td>
+                        <td>CULIACÁN</td>
+                        <td>SOLD OUT</td>
+                        <td>TEATRO GRIEGO</td>
+                    </tr>
+                    <tr>
+                        <td>20.ABR</td>
+                        <td>MAZATLÁN</td>
+                        <td>SOLD OUT</td>
+                        <td>CC DE MAZATLÁN</td>
+                    </tr>
+                    <tr>
+                        <td>26.ABR</td>
+                        <td>QUERÉTARO</td>
+                        <td>SOLD OUT</td>
+                        <td>AUD JOSEFA ORTIZ</td>
+                    </tr>
+                    <tr>
+                        <td>27.ABR</td>
+                        <td>CD MÉXICO</td>
+                        <td>SOLD OUT</td>
+                        <td>PEPSI CENTER</td>
+                    </tr>
+                    <tr>
+                        <td>03.MAY</td>
+                        <td>SALTILLO</td>
+                        <td>SOLD OUT</td>
+                        <td>PARQUE LAS MARAVILLAS</td>
+                    </tr>
+                    <tr>
+                        <td>04.MAY</td>
+                        <td>TORREÓN</td>
+                        <td>SOLD OUT</td>
+                        <td>COLISEO CENTENARIO</td>
+                    </tr>
+                    <tr>
+                        <td>09.MAY</td>
+                        <td>GUADALAJARA</td>
+                        <td>SOLD OUT</td>
+                        <td>AUDITORIO TELMEX</td>
+                    </tr>
+                    <tr>
+                        <td>11.MAY</td>
+                        <td>AGUASCALIENTES</td>
+                        <td>SOLD OUT</td>
+                        <td>C. DE CONVENCIONES</td>
+                    </tr>
+                    <tr>
+                        <td>12.MAY</td>
+                        <td>LEÓN</td>
+                        <td>SOLD OUT</td>
+                        <td>DOMO DE LA FERIA</td>
+                    </tr>
+                    <tr>
+                        <td>17.MAY</td>
+                        <td>MEXICALI</td>
+                        <td>SOLD OUT</td>
+                        <td>CEART</td>
+                    </tr>
+                    <tr>
+                        <td>18.MAY</td>
+                        <td>TIJUANA</td>
+                        <td>SOLD OUT</td>
+                        <td>PLAZA MONUMENTAL</td>
+                    </tr>
+                    <tr>
+                        <td>25.MAY</td>
+                        <td>TAMPICO</td>
+                        <td>SOLD OUT</td>
+                        <td>EXPO TAMPICO</td>
+                    </tr>
+                    <tr>
+                        <td>31.MAY</td>
+                        <td>MÉRIDA</td>
+                        <td>SOLD OUT</td>
+                        <td>LA ISLA MÉRIDA</td>
+                    </tr>
+                    <tr>
+                        <td>01.JUN</td>
+                        <td>CANCÚN</td>
+                        <td>SOLD OUT</td>
+                        <td>PLAZA DE TOROS</td>
+                    </tr>
+                    <tr>
+                        <td>07.JUN</td>
+                        <td>MORELIA</td>
+                        <td>SOLD OUT</td>
+                        <td>PALACIO DE ARTE</td>
+                    </tr>
+                    <tr>
+                        <td>08.JUN</td>
+                        <td>TOLUCA</td>
+                        <td>SOLD OUT</td>
+                        <td>TEATRO MORELOS</td>
+                    </tr>
+                    <tr>
+                        <td>15.JUN</td>
+                        <td>HERMOSILLO</td>
+                        <td>SOLD OUT</td>
+                        <td>CUM</td>
+                    </tr>
+                    <tr>
+                        <td>22.JUN</td>
+                        <td>TUXTLA</td>
+                        <td>SOLD OUT</td>
+                        <td>EXPO CONVENCIONES</td>
+                    </tr>
+                    <tr>
+                        <td>28.JUN</td>
+                        <td>VERACRUZ</td>
+                        <td>SOLD OUT</td>
+                        <td>AUD BENITO JUÁREZ</td>
+                    </tr>
+                    <tr>
+                        <td>29.JUN</td>
+                        <td>TLAXCALA</td>
+                        <td></td>
+                        <td>CCU*</td>
+                    </tr>
+                    <tr>
+                        <td>01.AGO</td>
+                        <td>DURANGO</td>
+                        <td></td>
+                        <td>TEATRO DEL PUEBLO</td>
+                    </tr>
+                    <tr>
+                        <td>09.AGO</td>
+                        <td>OAXACA</td>
+                        <td></td>
+                        <td>AUDITORIO GUELAGUETZA*</td>
+                    </tr>
+                   

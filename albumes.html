@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HUMBE - Landing Page</title>
+    <style>
+        /* Estilos CSS */
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(90deg, rgba(128,128,0,1) 0%, rgba(255,182,193,1) 100%);
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: radial-gradient(circle, rgba(128,128,0,1) 0%, rgba(255,182,193,1) 100%);
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .album-section {
+            margin-top: 4rem;
+            text-align: center;
+        }
+        .album-section h3 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+        .album-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .album-item {
+            display: flex;
+            flex-direction: row; /* Coloca la imagen a la izquierda y el texto a la derecha */
+            align-items: center; /* Centra verticalmente el contenido */
+            margin: 1rem;
+            text-align: left; /* Alinea el texto a la izquierda */
+            width: 100%; /* Ajuste para asegurar el ancho completo en dispositivos pequeños */
+        }
+        .album-item .thumbnail {
+            flex: 0 0 auto; /* Evita que la imagen cambie de tamaño */
+            margin-right: 1rem; /* Espacio entre la imagen y el texto */
+            max-width: 200px; /* Ancho máximo para la imagen */
+        }
+        .album-item img {
+            max-width: 100%;
+            height: auto; /* Ajuste automático de la altura */
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .album-item h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .album-item p {
+            margin-top: 0.5rem;
+            font-size: 1rem;
+            color: #666;
+        }
+        .album-description {
+            flex: 1; /* Ocupa el espacio restante */
+            text-align: left;
+            margin-top: 0;
+            font-size: 1.1rem;
+            color: #555;
+            line-height: 1.5;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ff69b4;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #d45a98;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><a href="principal.html">HUMBE</a></h1>
+    </header>
+    <main>
+        <!-- Álbumes destacados -->
+        <section class="album-section">
+            <h3>Álbumes destacados de Humbe</h3>
+            <p>Cada álbum de Humbe representa una fase única en su trayectoria artística, ofreciendo una mezcla de emociones, reflexiones y melodías que resuenan con su audiencia.</p>
+            
+            <div class="album-content">
+                <!-- Álbum Esencia -->
+                <div class="album-item">
+                    <div class="thumbnail">
+                        <img src="https://akamai.sscdn.co/letras/360x360/albuns/b/2/c/7/1723741679486590.jpg" alt="Esencia" style="background: #AAA46E;">
+                    </div>
+                    <div class="album-description">
+                        <h3>Esencia</h3>
+                        <p>2023 • Álbum</p>
+                        <a href="https://open.spotify.com/intl-es/album/39dBODVnnDV4ZB1TtPeMTj?si=2yGjd7RER0qRXJuTJq5SMw" class="cta-button">Escuchar</a>
+                        <p>Cuenta anécdotas y vivencias que han moldeado a Humbe como persona honesta y humilde.</p>
+                        <p><strong>Mensaje:</strong> Se trata de la construcción y deconstrucción de su esencia.</p>
+                    </div>
+                </div>
+
+                <!-- Álbum Aurora -->
+                <div class="album-item">
+                    <div class="thumbnail">
+                        <img src="https://akamai.sscdn.co/letras/360x360/albuns/3/8/8/1/01672841620.jpg" alt="Aurora" style="background: #CA8C97;">
+                    </div>
+                    <div class="album-description">
+                        <h3>Aurora</h3>
+                        <p>2022 • Álbum</p>
+                        <a href="https://open.spotify.com/intl-es/album/2Yjubr5GHX41ht808oZPzs?si=Uwtj3frqQACr46NreiibQw" class="cta-button">Escuchar</a>
+                        <p>Expresa gratitud y apreciación por la pareja del hablante. El álbum incluye canciones como “Dilo Cantando”, “Amor de Cine” y “Quítame las Alas”. Combina synth pop, R&B, reggae y jazz.</p>
+                    </div>
+                </div>
+
+                <!-- Álbum Entropía -->
+                <div class="album-item">
+                    <div class="thumbnail">
+                        <img src="https://akamai.sscdn.co/letras/360x360/albuns/1/9/6/2/1044191615911170.jpg" alt="Entropía" style="background: #049B95;">
+                    </div>
+                    <div class="album-description">
+                        <h3>Entropía</h3>
+                        <p>2021 • Álbum</p>
+                        <a href="https://open.spotify.com/intl-es/album/34ra2lYORSjzzupmCDKz46?si=wMoKiudtT5CTSa4M2i8Jaw" class="cta-button">Escuchar</a>
+                        <p>Entropía es el tercer álbum de estudio de Humbe, lanzado en 2021. Explora temas de caos y orden, reflejando las experiencias y reflexiones personales del artista.</p>
+                    </div>
+                </div>
+
+                <!-- Álbum Sonámbulo -->
+                <div class="album-item">
+                    <div class="thumbnail">
+                        <img src="https://akamai.sscdn.co/letras/360x360/albuns/a/1/2/1/2048121701871735.jpg" alt="Sonámbulo" style="background: #CDCDCD;">
+                    </div>
+                    <div class="album-description">
+                        <h3>Sonámbulo</h3>
+                        <p>2017 • Álbum</p>
+                        <a href="https://open.spotify.com/intl-es/album/7cDgpvAVujyriu78aIkw4M?si=-rIOX3K_TWaO7nhei4niSA" class="cta-button">Escuchar</a>
+                        <p>Sonámbulo es el primer álbum de estudio de Humbe, lanzado en 2017. Este álbum marcó el inicio de su carrera musical, explorando temas de introspección y reflexión personal.</p>
+                    </div>
+               
